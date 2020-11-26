@@ -7,7 +7,7 @@
 
 <!-- Page Content
 ================================================== -->
-<div class="container_">
+<div class="container">
 	<div class="row">
 		<div class="col-xl-3 col-lg-4">
 			<div class="sidebar-container">

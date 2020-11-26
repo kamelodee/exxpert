@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-md-12">
 
-				<h2>Browse Companies</h2>
+				<h2> Browse Companies</h2>
 
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
@@ -27,7 +27,7 @@
 
 <!-- Page Content
 ================================================== -->
-<div class="full-page-container">
+<div class="container">
 	<div class="row">
 		<div class="col-xl-12">
 			<div class="letters-list">

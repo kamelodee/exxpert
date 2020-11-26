@@ -1,0 +1,6 @@
+web:
+  image: exxpert-img
+  ports:
+    - 8000:8000
+  volumes:
+    - ./:/app

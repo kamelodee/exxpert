@@ -1,7 +1,7 @@
+
 @extends('layouts.theme')
 
 @section('content')
-
 <!-- Intro Banner
 ================================================== -->
 <div class="intro-banner dark-overlay big-padding">
@@ -93,7 +93,7 @@
 				<!-- Section Headline -->
 				<div class="section-headline margin-top-0 margin-bottom-25">
 					<h3>Highest Rated exxperts</h3>
-					<a href="freelancers-grid-layout.html" class="headline-link">Browse All exxperts</a>
+				<a href="{{route('exxperts')}}" class="headline-link">Browse All exxperts</a>
 				</div>
 			</div>
 
@@ -372,7 +372,7 @@
 				<!-- Section Headline -->
 				<div class="section-headline margin-top-0 margin-bottom-25">
 					<h3>Your closses exxperts</h3>
-					<a href="freelancers-grid-layout.html" class="headline-link">Browse All exxperts</a>
+				<a href="{{route('exxperts')}}" class="headline-link">Browse All exxperts</a>
 				</div>
 			</div>
 
