@@ -653,7 +653,7 @@
 				<!-- Section Headline -->
 				<div class="section-headline margin-top-0 margin-bottom-35">
 					<h3>Recent Jobs</h3>
-					<a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Jobs</a>
+					<a href="{{route('jobs')}}" class="headline-link">Browse All Jobs</a>
 				</div>
 				
 				<!-- Jobs Container -->

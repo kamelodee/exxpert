@@ -6,10 +6,10 @@
 
 <!-- Basic Page Needs
 ================================================== -->
-<title>{{ config('app.name', 'Laravel') }}</title>
+<title>{{ config('app.name', 'exxpert') }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ asset('assets/js/app.js') }}" defer></script>
 <!-- CSS
 ================================================== -->
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -20,18 +20,19 @@
 <body>
 
 <!-- Wrapper -->
-<div id="wrapper_" class="">
+<div id="wrapper" class="wrapper-with-transparent-header">
 
-<!-- Header Container
-================================================== -->
-<header id="header-container" class="fullwidth">
-
-	<!-- Header -->
-	<div id="header">
-		<div class="container">
-			
-			<!-- Left Side Content -->
-			<div class="left-side">
+	<!-- Header Container
+	================================================== -->
+	<header id="header-container" class="fullwidth transparent-header">
+	
+		<!-- Header -->
+		<div id="header">
+			<div class="container">
+				
+				<!-- Left Side Content -->
+				<div class="left-side">
+					
 				
 				<!-- Logo -->
 				<div id="logo">
@@ -125,7 +126,7 @@
 									<ul>
 										<!-- Notification -->
 										<li class="notifications-not-read">
-											<a href="dashboard-manage-candidates.html">
+										<a href="{{route('manage.jobs')}}">
 												<span class="notification-icon"><i class="icon-material-outline-group"></i></span>
 												<span class="notification-text">
 													<strong>Michael Shannah</strong> applied for a job <span class="color">Full Stack Software Engineer</span>
@@ -135,7 +136,7 @@
 
 										<!-- Notification -->
 										<li>
-											<a href="dashboard-manage-bidders.html">
+										<a href="{{route('manage.bidders')}}">
 												<span class="notification-icon"><i class=" icon-material-outline-gavel"></i></span>
 												<span class="notification-text">
 													<strong>Gilbert Allanis</strong> placed a bid on your <span class="color">iOS App Development</span> project
@@ -145,7 +146,7 @@
 
 										<!-- Notification -->
 										<li>
-											<a href="dashboard-manage-jobs.html">
+										<a href="{{route('manage.jobs')}}">
 												<span class="notification-icon"><i class="icon-material-outline-autorenew"></i></span>
 												<span class="notification-text">
 													Your job listing <span class="color">Full Stack PHP Developer</span> is expiring.
@@ -153,15 +154,7 @@
 											</a>
 										</li>
 
-										<!-- Notification -->
-										<li>
-											<a href="dashboard-manage-candidates.html">
-												<span class="notification-icon"><i class="icon-material-outline-group"></i></span>
-												<span class="notification-text">
-													<strong>Sindy Forrest</strong> applied for a job <span class="color">Full Stack Software Engineer</span>
-												</span>
-											</a>
-										</li>
+									
 									</ul>
 								</div>
 							</div>
@@ -190,32 +183,10 @@
 								<div class="header-notifications-scroll" data-simplebar>
 									<ul>
 										<!-- Notification -->
-										<li class="notifications-not-read">
-											<a href="dashboard-messages.html">
-												<span class="notification-avatar status-online"><img src="images/user-avatar-small-03.jpg" alt=""></span>
-												<div class="notification-text">
-													<strong>David Peterson</strong>
-													<p class="notification-msg-text">Thanks for reaching out. I'm quite busy right now on many...</p>
-													<span class="color">4 hours ago</span>
-												</div>
-											</a>
-										</li>
 
 										<!-- Notification -->
 										<li class="notifications-not-read">
-											<a href="dashboard-messages.html">
-												<span class="notification-avatar status-offline"><img src="images/user-avatar-small-02.jpg" alt=""></span>
-												<div class="notification-text">
-													<strong>Sindy Forest</strong>
-													<p class="notification-msg-text">Hi Tom! Hate to break it to you, but I'm actually on vacation until...</p>
-													<span class="color">Yesterday</span>
-												</div>
-											</a>
-										</li>
-
-										<!-- Notification -->
-										<li class="notifications-not-read">
-											<a href="dashboard-messages.html">
+										<a href="{{route('messages')}}">
 												<span class="notification-avatar status-online"><img src="images/user-avatar-placeholder.png" alt=""></span>
 												<div class="notification-text">
 													<strong>Marcin Kowalski</strong>
@@ -228,7 +199,7 @@
 								</div>
 							</div>
 
-							<a href="dashboard-messages.html" class="header-notifications-button ripple-effect button-sliding-icon">View All Messages<i class="icon-material-outline-arrow-right-alt"></i></a>
+						<a href="{{route('messages')}}" class="header-notifications-button ripple-effect button-sliding-icon">View All Messages<i class="icon-material-outline-arrow-right-alt"></i></a>
 						</div>
 					</div>
 
@@ -270,8 +241,8 @@
 						</div>
 						
 						<ul class="user-menu-small-nav">
-							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="{{route('dashboard')}}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="{{route('settings')}}"><i class="icon-material-outline-settings"></i> Settings</a></li>
                             <li><a  href="{{ route('logout') }}"  onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                    <i class="icon-material-outline-power-settings-new"></i> {{ __('Logout') }}</a>
@@ -314,8 +285,10 @@
 <!-- Header Container / End -->
 
 <main class="py-4">
-    @yield('content')
+	@yield('content')
 </main>
+  
+
 
 <!-- Footer
 ================================================== -->
@@ -465,7 +438,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
-					© 2019 <strong>Hireo</strong>. All Rights Reserved.
+				© 2020 <strong><img src="{{asset('assets/images/exxpert-logo.png')}}" alt="" srcset=""></strong>. All Rights Reserved.
 				</div>
 			</div>
 		</div>
@@ -478,7 +451,7 @@
 </div>
 <!-- Wrapper / End -->
 
-
+@yield('script')
 <!-- Scripts
 ================================================== -->
 <script src="{{asset('assets/js/jquery-3.4.1.min.js')}}"></script>

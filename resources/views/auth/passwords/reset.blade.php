@@ -1,10 +1,33 @@
-@extends('layouts.app')
+@extends('layouts.theme')
 
 @section('content')
+<div class="margin-top-70"></div>
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>Reset Password</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Reset Password</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+	<div class="row">
+		<div class="col-xl-5 offset-xl-3">
+
+
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
@@ -58,8 +81,8 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
+                </div>
+                </div>
+            
 </div>
 @endsection
