@@ -2,967 +2,489 @@
 @extends('layouts.theme')
 
 @section('content')
-<!-- Intro Banner
-================================================== -->
-<div class="intro-banner dark-overlay big-padding">
-	
-	<!-- Transparent Header Spacer -->
-	<div class="transparent-header-spacer"></div>
 
+
+
+
+<div id="homepage-4">
+
+
+	<div class="ps-home-banner">
+	  <div class="ps-carousel--dots owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="off" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut"><img src="{{asset('assets/img/banner/home-4/1.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/2.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/1.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/2.jpg')}}" alt=""></div>
+	  <form class="ps-form--home-find-job" action="http://nouthemes.net/html/athena/index.html" method="get">
+		<h1>Athena Connect <br/> Freelancers</h1>
+		<h5>Where the world meets startups. Millions of small businesses use Freelancer to turn their ideas into reality</h5>
+		<div class="form-group"><i class="fa fa fa-search"></i>
+		  <input class="form-control" type="text" placeholder="Enter job title, position, skills...">
+		  <button class="ps-btn ps-btn--gradient">Find Job</button>
+		</div>
+		<p>Update the latest jobs and announcements from Athena.</p>
+	  </form>
+	</div>
+
+
+		{{-- popular services in your area --}}
+
+		<div class="area-services" >
+			<div class="container">
+			  <div class="ps-section__header">
+				<h4>Popular services in Your Area.</h4>
+			  </div>
+			  <div class="ps-section__content">
+
+				<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
+				
+					<div class="" style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
+						</div>
+					  </div>
+					  
+					  <div class=" " style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
+						</div>
+					  </div>
+
+					  <div class=" " style="">
+					  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text">Some the card's content.</p>
+						</div>
+					  </div>
+
+					  <div class="" style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> up the bulk of the card's content.</p>
+						</div>
+					  </div>
+				  
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+{{--  --}}
+<div class="p-5" >
 	<div class="container">
+	 
+	  <div class="ps-section__content">
+
+		<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="2" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="on">
 		
-		<!-- Intro Headline -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="banner-headline-alt">
-					<h3>Don't Just Dream, Do</h3>
-					<span>Find the best jobs in the digital industry</span>
+			<div class="" style="">
+				<div class="d-flex justify-contentent-center align-items-center" style="">
+					<div class="col-6">
+					  <p class="pt-5">Some the card's content Some the card's content..</p>
+					  <button btn btn-primary>More info</button>
+					</div>
+					<div class="col-6">
+					  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+  
+					</div>
 				</div>
-			</div>
-		</div>
-		
-		<!-- Search Bar -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="intro-banner-search-form margin-top-95">
-
-					<!-- Search Field -->
-					<div class="intro-search-field with-autocomplete">
-						<label for="autocomplete-input" class="field-title ripple-effect">Where?</label>
-						<div class="input-with-icon">
-							<input id="autocomplete-input" type="text" placeholder="Online Job">
-							<i class="icon-material-outline-location-on"></i>
+				</div>
+				<div class="" style="">
+					<div class="d-flex justify-contentent-center align-items-center" style="">
+						<div class="col-6">
+						  <p class="pt-5">Some the card's content Some the card's content..</p>
+						  <button btn btn-primary>More info</button>
+						</div>
+						<div class="col-6">
+						  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+	  
 						</div>
 					</div>
-
-					<!-- Search Field -->
-					<div class="intro-search-field">
-						<label for ="intro-keywords" class="field-title ripple-effect">What job you want?</label>
-						<input id="intro-keywords" type="text" placeholder="Job Title or Keywords">
 					</div>
+			 
 
-					<!-- Button -->
-					<div class="intro-search-button">
-						<button class="button ripple-effect" onclick="window.location.href='jobs-list-layout-1.html'">Search</button>
-					</div>
+			  <div class="" style="">
+			  <div class="d-flex justify-contentent-center align-items-center" style="">
+				  <div class="col-6">
+					<p class="pt-5">Some the card's content Some the card's content..</p>
+					<button btn btn-primary>More info</button>
+				  </div>
+				  <div class="col-6">
+					<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+
+				  </div>
+			  </div>
+			  </div>
+		  
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+{{--  --}}
+
+		<div class="area-services" >
+			<div class="container">
+			  <div class="ps-section__header">
+				<h4>Popular services in Your Area.</h4>
+			  </div>
+			  <div class="ps-section__content">
+
+				<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
+				
+					<div class="" style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
+						</div>
+					  </div>
+					  
+					  <div class=" " style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
+						</div>
+					  </div>
+
+					  <div class=" " style="">
+					  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text">Some the card's content.</p>
+						</div>
+					  </div>
+
+					  <div class="" style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> up the bulk of the card's content.</p>
+						</div>
+					  </div>
+				  
 				</div>
-			</div>
-		</div>
-
-		<!-- Stats -->
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="intro-stats margin-top-45 hide-under-992px">
-					<li>
-						<strong class="counter">1,586</strong>
-						<span>Jobs Posted</span>
-					</li>
-					<li>
-						<strong class="counter">3,543</strong>
-						<span>Tasks Posted</span>
-					</li>
-					<li>
-						<strong class="counter">1,232</strong>
-						<span>Freelancers</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				{{-- footer  --}}
 	
-	<!-- Video Container -->
-	<div class="video-container" data-background-image="{{asset('assets/images/home-video-background-poster.jpg')}}">
-		<video loop autoplay muted>
-			<source src="{{asset('assets/images/exxpert-video.mp4" type="video/mp4')}}">
-		</video>
-	</div>
 
+
+
+
+<!-- Featured properties start -->
+<div class="featured-properties content-area ">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title mt2">
+            <div class="list-inline-listing">
+                <ul class="filters filteriz-navigation clearfix">
+                    <li class="active btn filtr-button filtr" data-filter="all">Home Maintenance</li>
+                    <li data-filter="1" class="btn btn-inline filtr-button filtr">Home Remodeling</li>
+                    <li data-filter="2" class="btn btn-inline filtr-button filtr">Weddings</li>
+                    <li data-filter="3" class="btn btn-inline filtr-button filtr">Events</li>
+                    <li  class="btn btn-inline filtr-button filtr"><a href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row filter-portfolio container">
+            <div class="cars ">
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="3">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                                
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Modern Family Home</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="3, 2, 1">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                               
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Relaxing Apartment</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="1, 2">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                                
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Park Avenue</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="3, 2">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                                
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Masons Villas</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                          
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="2, 1">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                                
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Big Head House</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="3, 1">
+                    <div class="property-box">
+                        <div class="property-thumbnail">
+                            <a href="properties-details.html" class="property-img">
+                               
+                                <img class="img-thumbnail rounded" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="properties">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="properties-details.html">Park Avenue</a>
+                            </h1>
+                            <div class="location">
+                                <a href="properties-details.html">
+                                    <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City
+                                </a>
+                            </div>
+                          
+                        </div>
+                        <div class="footer clearfix">
+                            <div class="pull-left days">
+                                <a><i class="fa fa-user"></i> Jhon Doe</a>
+                            </div>
+                            <div class="pull-right">
+                                <a><i class="flaticon-time"></i> 5 Days ago</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Content-->
 
-
-
-<!-- Highest Rated Freelancers -->
-<div class="section gray padding-top-65 padding-bottom-70 full-width-carousel-fix">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-xl-12">
-				<!-- Section Headline -->
-				<div class="section-headline margin-top-0 margin-bottom-25">
-					<h3>Highest Rated exxperts</h3>
-				<a href="{{route('exxperts')}}" class="headline-link">Browse All exxperts</a>
-				</div>
-			</div>
-
-			<div class="col-xl-12">
-				<div class="default-slick-carousel freelancers-container freelancers-grid-layout">
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-01.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="single-freelancer-profile.html">Tom Smith <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
-									<span>UI/UX Designer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
-									<li>Rate <strong>$60 / hr</strong></li>
-									<li>Job Success <strong>95%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-02.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
-									<span>iOS Expert + Node Dev</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
-									<li>Rate <strong>$40 / hr</strong></li>
-									<li>Job Success <strong>88%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
-									<span>Front-End Developer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="4.9"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
-									<li>Rate <strong>$50 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-03.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
-									<span>Magento Certified Developer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
-									<li>Rate <strong>$70 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-					
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy" data-tippy-placement="top"></a></h4>
-									<span>Laravel Dev</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="4.5"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
-									<li>Rate <strong>$80 / hr</strong></li>
-									<li>Job Success <strong>89%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-								
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France" data-tippy-placement="top"></a></h4>
-									<span>WordPress Expert</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
-									<li>Rate <strong>$50 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>
-<!-- Highest Rated Freelancers / End-->
-
-
-
-
-<!-- closses  Freelancers -->
-<div class="section gray padding-top-65 padding-bottom-70 full-width-carousel-fix">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-xl-12">
-				<!-- Section Headline -->
-				<div class="section-headline margin-top-0 margin-bottom-25">
-					<h3>Your closses exxperts</h3>
-				<a href="{{route('exxperts')}}" class="headline-link">Browse All exxperts</a>
-				</div>
-			</div>
-
-			<div class="col-xl-12">
-				<div class="default-slick-carousel freelancers-container freelancers-grid-layout">
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-01.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="single-freelancer-profile.html">Tom Smith <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
-									<span>UI/UX Designer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
-									<li>Rate <strong>$60 / hr</strong></li>
-									<li>Job Success <strong>95%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-02.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
-									<span>iOS Expert + Node Dev</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
-									<li>Rate <strong>$40 / hr</strong></li>
-									<li>Job Success <strong>88%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-							<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
-									<span>Front-End Developer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="4.9"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
-									<li>Rate <strong>$50 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<div class="verified-badge"></div>
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-big-03.jpg')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
-									<span>Magento Certified Developer</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
-									<li>Rate <strong>$70 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-					
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy" data-tippy-placement="top"></a></h4>
-									<span>Laravel Dev</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="4.5"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
-									<li>Rate <strong>$80 / hr</strong></li>
-									<li>Job Success <strong>89%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-								
-					<!--Freelancer -->
-					<div class="freelancer">
-
-						<!-- Overview -->
-						<div class="freelancer-overview">
-								<div class="freelancer-overview-inner">
-								<!-- Bookmark Icon -->
-								<span class="bookmark-icon"></span>
-								
-								<!-- Avatar -->
-								<div class="freelancer-avatar">
-									<a href="single-freelancer-profile.html"><img src="{{asset('assets/images/user-avatar-placeholder.png')}}" alt=""></a>
-								</div>
-
-								<!-- Name -->
-								<div class="freelancer-name">
-									<h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France" data-tippy-placement="top"></a></h4>
-									<span>WordPress Expert</span>
-								</div>
-
-								<!-- Rating -->
-								<div class="freelancer-rating">
-									<div class="star-rating" data-rating="5.0"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Details -->
-						<div class="freelancer-details">
-							<div class="freelancer-details-list">
-								<ul>
-									<li>Location <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
-									<li>Rate <strong>$50 / hr</strong></li>
-									<li>Job Success <strong>100%</strong></li>
-								</ul>
-							</div>
-							<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-					<!-- Freelancer / End -->
-
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>
-<!-- closses Freelancers / End-->
-
-
-
-
-
-
-<!-- Features Jobs -->
-<div class="section padding-top-65 padding-bottom-75">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
 				
-				<!-- Section Headline -->
-				<div class="section-headline margin-top-0 margin-bottom-35">
-					<h3>Recent Jobs</h3>
-					<a href="{{route('jobs')}}" class="headline-link">Browse All Jobs</a>
-				</div>
+				{{-- Explore more projects. --}}
+		<div class="card p-5">
+			<div class="container">
+			  <div class="col-6">
+				<h4>Get free cost estimates.</h4>
+
+				<p>	We analyzed millions of bids from Thumbtack professionals to see what things really cost. Find out what other people have paid for projects like yours.</p>
+			  </div>
+			  <div class="ps-section__content">
+
+				<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
 				
-				<!-- Jobs Container -->
-				<div class="listings-container compact-list-layout margin-top-35">
-					
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="{{asset('assets/images/company-logo-01.png')}}" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Hexagon <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
+					<div class=" " style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
 						</div>
-					</a>	
-
-
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="{{asset('assets/images/company-logo-05.png')}}" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Competition Law Officer</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Laxo</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
+					  </div>
+					  
+					  <div class=" " style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> and make up the bulk of the card's content.</p>
 						</div>
-					</a>
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
+					  </div>
 
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="{{asset('assets/images/company-logo-02.png')}}" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Barista and Cashier</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Coffee</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
+					  <div class=" " style="">
+					  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text">Some the card's content.</p>
 						</div>
-					</a>
-					
+					  </div>
 
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="{{asset('assets/images/company-logo-03.png')}}" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">Restaurant General Manager</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> King <div class="verified-badge" title="Verified Employer" data-tippy-placement="top"></div></li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
+					  <div class=" " style="">
+						<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+						<div class="card-body">
+						  <p class="card-text"> up the bulk of the card's content.</p>
 						</div>
-					</a>
-
-					<!-- Job Listing -->
-					<a href="single-job-page.html" class="job-listing with-apply-button">
-
-						<!-- Job Listing Details -->
-						<div class="job-listing-details">
-
-							<!-- Logo -->
-							<div class="job-listing-company-logo">
-								<img src="{{asset('assets/images/company-logo-05.png')}}" alt="">
-							</div>
-
-							<!-- Details -->
-							<div class="job-listing-description">
-								<h3 class="job-listing-title">International Marketing Coordinator</h3>
-
-								<!-- Job Listing Footer -->
-								<div class="job-listing-footer">
-									<ul>
-										<li><i class="icon-material-outline-business"></i> Skyist</li>
-										<li><i class="icon-material-outline-location-on"></i> San Francissco</li>
-										<li><i class="icon-material-outline-business-center"></i> Full Time</li>
-										<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Apply Button -->
-							<span class="list-apply-button ripple-effect">Apply Now</span>
-						</div>
-					</a>
-
+					  </div>
+				  
 				</div>
-				<!-- Jobs Container / End -->
-
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Featured Jobs / End -->
-
-
-<!-- Photo Section -->
-<div class="photo-section" data-background-image="{{asset('assets/images/section-background.jpg')}}">
-
-	<!-- Infobox -->
-	<div class="text-content white-font">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-6 col-md-8 col-sm-12">
-					<h2>Hire experts or be hired. <br> For any job, any time.</h2>
-					<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation is on the runway towards.</p>
-					<a href="pages-pricing-plans.html" class="button button-sliding-icon ripple-effect big margin-top-20">Get Started <i class="icon-material-outline-arrow-right-alt"></i></a>
+				<button class="btn btn-primary">get More</button>
 				</div>
-			</div>
+				</div>
+				</div>
+				</div>
+			
+	
+		{{-- popular services in your area  end--}}
 
+
+
+	<div class="ps-section ps-home-process bg--cover" data-background="{{asset('assets/img/bg/home-4/process.jpg')}}">
+	  <div class="container">
+		<div class="ps-section__header">
+		  <h3>Process to get started</h3>
+		  <p>Pellentesque vehicula fermentum turpis eu cursus. Cras convallis tellus et elit aliquet, vitae <br/> dignissim ligula sodales.</p>
 		</div>
-	</div>
-
-	<!-- Infobox / End -->
-
-</div>
-<!-- Photo Section / End -->
-
-
-<!-- Recent Blog Posts -->
-<div class="section padding-top-65 padding-bottom-50">
-	<div class="container">
 		<div class="row">
-			<div class="col-xl-12">
-				
-				<!-- Section Headline -->
-				<div class="section-headline margin-top-0 margin-bottom-45">
-					<h3>From The Blog</h3>
-					<a href="pages-blog.html" class="headline-link">View Blog</a>
-				</div>
+		  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+			<div class="ps-block--process">
+			  <div class="ps-block__thumbnail"><img src="{{asset('assets/img/icons/home-1/process-1.png')}}" alt=""></div>
+			  <div class="ps-block__contentz">
+				<p><span><i>1</i></span>Sign up for a account</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+			<div class="ps-block--process">
+			  <div class="ps-block__thumbnail"><img src="{{asset('assets/img/icons/home-1/process-2.png')}}" alt=""></div>
+			  <div class="ps-block__content">
+				<p><span><i>2</i></span>Confirm your email address and add profile</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+			<div class="ps-block--process">
+			  <div class="ps-block__thumbnail"><img src="{{asset('assets/img/icons/home-1/process-3.png')}}" alt=""></div>
+			  <div class="ps-block__content">
+				<p><span><i>3</i></span>Choice of solutions and post jobs</p>
+			  </div>
+			</div>
+		  </div>
 
+		</div>
+	  </div>
+	</div>
+
+
+	<div class="ps-home-top-jobs gray">
+	  <div class="container">
+		<div class="ps-section__content">
+		  <div class="row">
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+			  <figure>
+				<figcaption>Browse top jobs in category</figcaption>
 				<div class="row">
-					<!-- Blog Post Item -->
-					<div class="col-xl-4">
-						<a href="pages-blog-post.html" class="blog-compact-item-container">
-							<div class="blog-compact-item">
-								<img src="{{asset('assets/images/blog-01a.jpg')}}" alt="">
-								<span class="blog-item-tag">Tips</span>
-								<div class="blog-compact-item-content">
-									<ul class="blog-post-tags">
-										<li>22 July 2019</li>
-									</ul>
-									<h3>16 Ridiculously Easy Ways to Find & Keep a Remote Job</h3>
-									<p>Distinctively reengineer revolutionary meta-services and premium architectures intuitive opportunities.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Blog post Item / End -->
-
-					<!-- Blog Post Item -->
-					<div class="col-xl-4">
-						<a href="pages-blog-post.html" class="blog-compact-item-container">
-							<div class="blog-compact-item">
-								<img src="{{asset('assets/images/blog-02a.jpg')}}" alt="">
-								<span class="blog-item-tag">Recruiting</span>
-								<div class="blog-compact-item-content">
-									<ul class="blog-post-tags">
-										<li>29 June 2019</li>
-									</ul>
-									<h3>How to "Woo" a Recruiter and Land Your Dream Job</h3>
-									<p>Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Blog post Item / End -->
-
-					<!-- Blog Post Item -->
-					<div class="col-xl-4">
-						<a href="pages-blog-post.html" class="blog-compact-item-container">
-							<div class="blog-compact-item">
-								<img src="{{asset('assets/images/blog-03a.jpg')}}" alt="">
-								<span class="blog-item-tag">Marketing</span>
-								<div class="blog-compact-item-content">
-									<ul class="blog-post-tags">
-										<li>10 June 2019</li>
-									</ul>
-									<h3>11 Tips to Help You Get New Clients Through Cold Calling</h3>
-									<p>Compellingly embrace empowered e-business after user friendly intellectual capital. Interactively front-end.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Blog post Item / End -->
+				  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+					<ul class="ps-list">
+					  <li><a href="#">Graphic design</a></li>
+					  <li><a href="#">Designer jobs</a></li>
+					  <li><a href="#">Frontend Developer jobs</a></li>
+					  <li><a href="#">Developer jobs</a></li>
+					</ul>
+				  </div>
+				  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+					<ul class="ps-list">
+					  <li><a href="#">Resources jobs</a></li>
+					  <li><a href="#">Marketing online jobs</a></li>
+					  <li><a href="#">Mobile Developer jobs</a></li>
+					  <li><a href="#">App Developer jobs</a></li>
+					</ul>
+				  </div>
 				</div>
+			  </figure>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+			  <figure>
+				<figcaption>Browse top jobs in category</figcaption>
+				<div class="row">
+				  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+					<ul class="ps-list">
+					  <li><a href="#">Resources jobs</a></li>
+					  <li><a href="#">Sales jobs</a></li>
+					  <li><a href="#">Logo Design jobs</a></li>
+					  <li><a href="#">Seo jobs</a></li>
+					</ul>
+				  </div>
+				  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+					<ul class="ps-list">
+					  <li><a href="#">Articles jobs</a></li>
+					  <li><a href="#">Android jobs</a></li>
+					  <li><a href="#">Logo Design jobs</a></li>
+					  <li><a href="#">Seo jobs</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </figure>
 
 
 			</div>
+		  </div>
 		</div>
+	  </div>
 	</div>
-</div>
-<!-- Recent Blog Posts / End -->
 
-<div class="section border-top padding-top-45 padding-bottom-45">
-	<!-- Logo Carousel -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
-				<!-- Carousel -->
-				<div class="col-md-12">
-					<div class="logo-carousel">
-						
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-01.png')}}" alt=""></a>
-						</div>
-						
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-02.png')}}" alt=""></a>
-						</div>
-						
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-03.png')}}" alt=""></a>
-						</div>
-						
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-04.png')}}" alt=""></a>
-						</div>
-						
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-05.png')}}" alt=""></a>
-						</div>
 
-						<div class="carousel-item">
-							<a href="http://acmelogos.com/" target="_blank" title="http://acmelogos.com/"><img src="{{asset('assets/images/logo-carousel-06.png')}}" alt=""></a>
-						</div>
-
-					</div>
-				</div>
-				<!-- Carousel / End -->
-			</div>
-		</div>
+	<div class="ps-home-join-us">
+	  <div class="container">
+		<p>Millions of small businesses use <br/> Freelancer to turn their ideas into reality</p><a class="ps-btn ps-btn--gradient" href="#">Join athena today</a>
+	  </div>
 	</div>
-</div>
+
 
 @endsection

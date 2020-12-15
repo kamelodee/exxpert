@@ -3,96 +3,71 @@
 @section('content')
 
 
-<!-- Titlebar
-================================================== -->
-<div id="titlebar" class="gradient">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
 
-				<h2>Log In</h2>
-
-				<!-- Breadcrumbs -->
-				<nav id="breadcrumbs" class="dark">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li>Log In</li>
-					</ul>
-				</nav>
-
+    <!--include search-sidebar-->
+    <div class="ps-page--signin">
+		<div class="container">
+		  <form class="ps-form--signin" method="POST" action="{{ route('login') }}">
+			@csrf
+			<div class="ps-form__header">
+			  <h3>Sign In</h3>
+			  <p>Choose one of the following sign in methods.</p>
+			  <div class="ps-form__method"><a class="ps-btn ps-btn--facebook" href="#"><i class="fa fa-facebook"></i> With Facebook</a><a class="ps-btn ps-btn--google" href="#"><i class="fa fa-google-plus"></i> With Google +</a></div>
+			  <p>Or sign in using your email address</p>
 			</div>
-		</div>
-	</div>
-</div>
-
-
-<!-- Page Content
-================================================== -->
-<div class="container">
-	<div class="row">
-		<div class="col-xl-5 offset-xl-3">
-
-
-			<div class="login-register-page">
-				<!-- Welcome Text -->
-				<div class="welcome-text">
-					<h3>We're glad to see you again!</h3>
-					<span>Don't have an account? <a href="{{ route('register') }}">Sign Up!</a></span>
-				</div>
-					
-				<!-- Form -->
-				<form method="POST" action="{{ route('login') }}">
-                    @csrf
-                    <div class="input-with-icon-left">
-						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border  @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email Address" required/>
+			<div class="ps-form__content">
+			  <div class="form-group">
+				<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="form-control input-text with-border  @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email Address" required/>
                         @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
-                    </div>
-
-					<div class="input-with-icon-left">
-						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border  @error('password') is-invalid @enderror" name="password" id="password" placeholder="Password" required/>
+			  </div>
+			  <div class="form-group">
+				<i class="icon-material-outline-lock"></i>
+						<input type="password" class="form-control input-text with-border  @error('password') is-invalid @enderror" name="password" id="password" placeholder="Password" required/>
                         @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
-                    </div>
-					
-                    
-                                <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
-			
-                
-                                <div class="input-with-icon-left">
-                                    @if (Route::has('password.request'))
-                                    <a class="forgot-password" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                                   </div>
-                            </form>
-				
-				<!-- Button -->
-				
-				<!-- Social Login -->
-				<div class="social-login-separator"><span>or</span></div>
-				<div class="social-login-buttons">
-					<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
-					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
-				</div>
+			  </div>
 			</div>
-
+			<div class="ps-form__actions">
+			  <div class="ps-checkbox ps-checkbox--circle">
+				<input class="form-control" type="checkbox" id="newsletter" name="newsletters"/>
+				<label for="newsletter">Remember me</label>
+			  </div> @if (Route::has('password.request'))
+			  <a class="forgot-password" href="{{ route('password.request') }}">
+				  {{ __('Forgot Your Password?') }}
+			  </a>
+		  @endif
+			</div>
+			<div class="ps-form__footer">
+			  <button class="ps-btn ps-btn--fullwidth ps-btn--gradient">Login</button>
+			<p>Don't have an account?<a href="{{route('register')}}"> Sign up now!</a></p>
+			</div>
+		  </form>
 		</div>
-	</div>
-</div>
+	  </div>
+  
+  
+  
 
 
-<!-- Spacer -->
-<div class="margin-top-70"></div>
-<!-- Spacer / End-->
+
+
+
+
+
+
+
+
+
+
+
+
 
 @endsection

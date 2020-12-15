@@ -2,115 +2,91 @@
 
 @section('content')
 
-<!-- Titlebar
-================================================== -->
-<div id="titlebar" class="gradient">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
 
-				<h2>Register</h2>
 
-				<!-- Breadcrumbs -->
-				<nav id="breadcrumbs" class="dark">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li>Register</li>
-					</ul>
-				</nav>
 
+    <!--include search-sidebar-->
+    <div class="ps-page--signup" id="signup-freelancer">
+		<div class="container">
+		  <div class="row">
+			<div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 col-12 ">
+			  <div class="ps-page__left"><img src="{{asset('assets/img/pages/account/signup-freelancer.png')}}" alt="">
+			  <p>Already user?<a href="{{route('login')}}"> Sign in</a></p>
+			  </div>
 			</div>
-		</div>
-	</div>
-</div>
-
-
-<!-- Page Content
-================================================== -->
-<div class="container">
-	<div class="row">
-		<div class="col-xl-5 offset-xl-3">
-
-			<div class="login-register-page">
-				<!-- Welcome Text -->
-				<div class="welcome-text">
-					<h3 style="font-size: 26px;">Let's create your account!</h3>
-					<span>Already have an account? <a href="{{ route('login') }}">Log In!</a></span>
+			<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 ">
+			<form class="ps-form--signup-freelancer" action="{{route('register')}}" method="post">
+				@csrf
+				<div class="ps-form__header">
+				  <h3>Sign up for free.</h3>
+				  <p>Choose one of the following sign up methods.</p>
+				  <div class="ps-form__method"><a class="ps-btn ps-btn--facebook" href="#"><i class="fa fa-facebook"></i> With Facebook</a><a class="ps-btn ps-btn--google" href="#"><i class="fa fa-google-plus"></i> With Google +</a></div>
+				  <p>Or sign up using your email address</p>
 				</div>
-
-				<!-- Account Type -->
-				<div class="account-type">
-					<div>
-						<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-						<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
-					</div>
-
-					<div>
-						<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-						<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-					</div>
-				</div>
-					
-				<!-- Form -->
-                <form method="POST" action="{{ route('register') }}">
-                    @csrf
-					<div class="input-with-icon-left">
-						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" name="name" id="name" placeholder="Name" required/>
+				<div class="ps-form__content">
+				  <div class="form-group">
+					<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="form-control input-text with-bord @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" name="name" id="name" placeholder="Name" required/>
                    
                         @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
-                    </div>
-                    
-					<div class="input-with-icon-left">
-						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" name="email" id="email" placeholder="Email Address" required/>
+				  </div>
+				  
+				  <div class="form-group">
+					<i class="icon-material-baseline-mail-outline"></i>
+						<input type="email" class="form-control input-text with-bord @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" name="email" id="email" placeholder="Email Address" required/>
                         @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                    </div>
-
-					<div class="input-with-icon-left" title="Should be at least 8 characters long" data-tippy-placement="bottom">
-						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border @error('password') is-invalid @enderror" name="password" name="password" id="password" placeholder="Password" required/>
+				  </div>
+				  <div class="form-group">
+					<i class="icon-material-outline-lock"></i>
+						<input type="password" class="form-control input-text with-bord @error('password') is-invalid @enderror" name="password" name="password" id="password" placeholder="Password" required/>
                         @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                       @enderror
-                    </div>
-
-					<div class="input-with-icon-left">
-						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border" name="password_confirmation" id="password-cornfrm" placeholder="Repeat Password" required/>
-                    </div>
-                    
-				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
-				
-				</form>
-				
-				<!-- Social Login -->
-				<div class="social-login-separator"><span>or</span></div>
-				<div class="social-login-buttons">
-					<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Register via Facebook</button>
-					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Register via Google+</button>
+				  </div>
+				  <div class="form-group">
+					<i class="icon-material-outline-lock"></i>
+						<input type="password" class="form-control" name="password_confirmation" id="password-cornfrm" placeholder="Repeat Password" required/>
+                   
+				  </div>
+				  <p><i class="fa fa-shield"></i> Your passwords at exxpert are encrypted and secured</p>
+				  {{-- <div class="ps-checkbox ps-checkbox--circle">
+					<input class="form-control" type="checkbox" id="newsletter" name="newsletters"/>
+					<label for="newsletter">I would like to receive weekly and monthly newsletters from
+  exxpert</label>
+				  </div> --}}
 				</div>
+				<div class="ps-form__footer">
+				  <button class="ps-btn ps-btn--fullwidth ps-btn--gradient">Sign Up</button>
+				  <p>By registering you confirm that you accept the <br><a href="#"> Terms and Conditions</a> and<a href="#"> Privacy Policy</a></p>
+				</div>
+			  </form>
 			</div>
-
+		  </div>
 		</div>
-	</div>
-</div>
+	  </div>
 
 
-<!-- Spacer -->
-<div class="margin-top-70"></div>
-<!-- Spacer / End-->
+
+
+
+
+
+
+
+
+
+
+
 
 
 

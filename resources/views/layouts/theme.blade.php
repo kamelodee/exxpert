@@ -1,287 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from www.vasterad.com/themes/hireo/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Nov 2020 22:23:27 GMT -->
+  
+<!-- Mirrored from nouthemes.net/html/athena/homepage-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 09:21:55 GMT -->
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>exxpert</title><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap%7cMontserrat:400,600,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/plugins/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap4/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/owl-carousel/assets/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/jquery-ui/jquery-ui.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/select2/dist/css/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/fonts/athena/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+  </head>
+  <body>
+    <header class="header header--2 dark" data-sticky="true">
+      <div class="header__left">
+        <a class="ps-logo" href="index.html">
+        <img src="{{asset('assets/img/exxpert-logo2.png')}}" alt=""></a></div>
+      <div class="header__right">
+        <ul class="menu">
+          <li class="menu-item-has-children"><a href="index.html">Home</a><span class="sub-toggle"></span> </li>
+          <li><a href="brower-freelancer.html">exxperts</a></li>
+          <li><a href="brower-employers.html">companies</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="menu-item-has-children"><a href="blog-grid.html">explore</a><span class="sub-toggle"></span>
+            <ul class="sub-menu">
+              <li><a href="blog-list.html">Blog list</a></li>
+              <li><a href="blog-grid.html">Blog Grid</a></li>
+              <li><a href="blog-detail.html">Blog Detail Width Sidebar</a></li>
+			  <li><a href="blog-no-sidebar.html">Blog Detail Without Sidebar</a>
+			
+			<div class="">
+				<a href="#">electricians</a>  ||  
+				<a href="#">tillers</a>  ||  
+				<a href="#">massons</a>   ||  
+				<a href="#">web designers</a>  ||  
+				<a href="#">graphic designers</a>  ||  
+				<a href="#">houser cleaner</a>  ||  
+				<a href="#">painters</a>   ||  
+				
+			</div>
+			</li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact</a></li>
+		</ul>
+		
 
-<!-- Basic Page Needs
-================================================== -->
-<title>{{ config('app.name', 'exxpert') }}</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<script src="{{ asset('assets/js/app.js') }}" defer></script>
-<!-- CSS
-================================================== -->
-<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-<link rel="stylesheet" href="{{asset('assets/css/colors/blue.css')}}">
-<link rel=" icon"  type="image/png" sizes="180x180" href="{{asset('assets/images/exxpert-logo.png')}}">
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
+		@guest
+		<div class="header__actions">
+			
+		@if (Route::has('login'))
+			
+				<a class="ps-btn ps-btn--outline" href="{{ route('login') }}">{{ __('Login') }}</a>
+			
+		@endif
+		
+		@if (Route::has('register'))
+			
+				<a class="ps-btn" href="{{ route('register') }}">{{ __('Register') }}</a>
 
-<!-- Wrapper -->
-<div id="wrapper" class="wrapper-with-transparent-header">
+		@endif 
+	</div> 
+	@else
+	<ul class="menu">
+		
 
-	<!-- Header Container
-	================================================== -->
-	<header id="header-container" class="fullwidth transparent-header">
+		<li class="menu-item-has-children"><a href="blog-grid.html">Hi	{{ Auth::user()->name }} <i class="fa fa-user"></i>  </a><span class="sub-toggle"></span>
+            <ul class="sub-menu">
+              <li><a class="dropdown-item" href="{{ route('logout') }}"
+				onclick="event.preventDefault();
+							  document.getElementById('logout-form').submit();">
+				 {{ __('Logout') }}
+				 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+					@csrf
+				</form>
+			 </a></li>
+              <li><a href="blog-grid.html">dasboard</a></li>
+              <li><a href="blog-detail.html">account</a></li>
+			  <li><a href="blog-no-sidebar.html">profile</a>
+			
+			
+			</li>
+            </ul>
+          </li>
+
 	
-		<!-- Header -->
-		<div id="header">
-			<div class="container">
-				
-				<!-- Left Side Content -->
-				<div class="left-side">
-					
-				
-				<!-- Logo -->
-				<div id="logo">
-					<a href="/"><img src="{{asset('assets/images/exxpert-logo.png')}}" data-sticky-logo="{{asset('assets/images/exxpert-logo.png')}}" data-transparent-logo="{{asset('assets/images/exxpert-logo.png')}}" alt=""></a>
-				</div>
+		
+	</ul>
+	@endguest
 
-				<!-- Main Navigation -->
-				<nav id="navigation">
-					<ul id="responsive">
-
-                    <li><a href="{{route('home')}}" class="current">Home</a>
-							
-						</li>
-
-						<li><a href="#">Find Work</a>
-							<ul class="dropdown-nav">
-								
-							<li><a href="{{route('tasks')}}">Browse Tasks</a>
-									
-						</li>
-								
-					<li><a href="{{route('jobs')}}">Browse Jobs</a>
-									
-						</li>
-
-					<li><a href="{{route('companies')}}">For Employers</a>
-						</ul>	
-						</li>
-
-						<li><a href="{{route('exxperts')}}" class="">find exxpert</a>
-							
-						</li>
-
-
-					
-					</ul>
-				</nav>
-				<div class="clearfix"></div>
-				<!-- Main Navigation / End -->
-				
-			</div>
-			<!-- Left Side Content / End -->
-
-          
-			<!-- Right Side Content / End -->
-			<div class="right-side">
-                
-                @guest
-                <nav id="navigation">
-					<ul id="responsive">
-                @if (Route::has('login'))
-                <li class="">
-                        <a class="nav-link" href="{{ route('login') }}"> <i class="icon-feather-user"></i> {{ __('Login') }}</a>
-                </li>
-                @endif
-                
-                @if (Route::has('register'))
-
-                <li class="">
-                    <a class="nav-link" href="{{ route('register') }}"><i class="icon-feather-user"></i> {{ __('Become an exxpert') }}</a>
-                </li>
-                    
-                @endif
-                    </ul>
-                </nav>
-            @else
-
-				<!--  User Notifications -->
-				<div class="header-widget hide-on-mobile">
-					
-					<!-- Notifications -->
-					<div class="header-notifications">
-
-						<!-- Trigger -->
-						<div class="header-notifications-trigger">
-							<a href="#"><i class="icon-feather-bell"></i><span>4</span></a>
-						</div>
-
-						<!-- Dropdown -->
-						<div class="header-notifications-dropdown">
-
-							<div class="header-notifications-headline">
-								<h4>Notifications</h4>
-								<button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
-									<i class="icon-feather-check-square"></i>
-								</button>
-							</div>
-
-							<div class="header-notifications-content">
-								<div class="header-notifications-scroll" data-simplebar>
-									<ul>
-										<!-- Notification -->
-										<li class="notifications-not-read">
-										<a href="{{route('manage.jobs')}}">
-												<span class="notification-icon"><i class="icon-material-outline-group"></i></span>
-												<span class="notification-text">
-													<strong>Michael Shannah</strong> applied for a job <span class="color">Full Stack Software Engineer</span>
-												</span>
-											</a>
-										</li>
-
-										<!-- Notification -->
-										<li>
-										<a href="{{route('manage.bidders')}}">
-												<span class="notification-icon"><i class=" icon-material-outline-gavel"></i></span>
-												<span class="notification-text">
-													<strong>Gilbert Allanis</strong> placed a bid on your <span class="color">iOS App Development</span> project
-												</span>
-											</a>
-										</li>
-
-										<!-- Notification -->
-										<li>
-										<a href="{{route('manage.jobs')}}">
-												<span class="notification-icon"><i class="icon-material-outline-autorenew"></i></span>
-												<span class="notification-text">
-													Your job listing <span class="color">Full Stack PHP Developer</span> is expiring.
-												</span>
-											</a>
-										</li>
-
-									
-									</ul>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					
-					<!-- Messages -->
-					<div class="header-notifications">
-						<div class="header-notifications-trigger">
-							<a href="#"><i class="icon-feather-mail"></i><span>3</span></a>
-						</div>
-
-						<!-- Dropdown -->
-						<div class="header-notifications-dropdown">
-
-							<div class="header-notifications-headline">
-								<h4>Messages</h4>
-								<button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
-									<i class="icon-feather-check-square"></i>
-								</button>
-							</div>
-
-							<div class="header-notifications-content">
-								<div class="header-notifications-scroll" data-simplebar>
-									<ul>
-										<!-- Notification -->
-
-										<!-- Notification -->
-										<li class="notifications-not-read">
-										<a href="{{route('messages')}}">
-												<span class="notification-avatar status-online"><img src="images/user-avatar-placeholder.png" alt=""></span>
-												<div class="notification-text">
-													<strong>Marcin Kowalski</strong>
-													<p class="notification-msg-text">I received payment. Thanks for cooperation!</p>
-													<span class="color">Yesterday</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						<a href="{{route('messages')}}" class="header-notifications-button ripple-effect button-sliding-icon">View All Messages<i class="icon-material-outline-arrow-right-alt"></i></a>
-						</div>
-					</div>
-
-				</div>
-				<!--  User Notifications / End -->
-
-
-               
-				<!-- User Menu -->
-				<div class="header-widget">
-
-					<!-- Messages -->
-					<div class="header-notifications user-menu">
-						<div class="header-notifications-trigger">
-							<a href="#"><div class="user-avatar status-online"><img src="{{asset('assets/images/user-avatar-small-01.jpg')}}" alt=""></div></a>
-						</div>
-
-						<!-- Dropdown -->
-						<div class="header-notifications-dropdown">
-
-							<!-- User Status -->
-							<div class="user-status">
-
-								<!-- User Name / Avatar -->
-								<div class="user-details">
-									<div class="user-avatar status-online"><img src="{{asset('assets/images/user-avatar-small-01.jpg')}}" alt=""></div>
-									<div class="user-name">
-                                    {{Auth::user()->name}}<span>Freelancer</span>
-									</div>
-								</div>
-								
-								<!-- User Status Switcher -->
-								<div class="status-switch" id="snackbar-user-status">
-									<label class="user-online current-status">Online</label>
-									<label class="user-invisible">Invisible</label>
-									<!-- Status Indicator -->
-									<span class="status-indicator" aria-hidden="true"></span>
-								</div>	
-						</div>
-						
-						<ul class="user-menu-small-nav">
-							<li><a href="{{route('dashboard')}}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="{{route('settings')}}"><i class="icon-material-outline-settings"></i> Settings</a></li>
-                            <li><a  href="{{ route('logout') }}"  onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                   <i class="icon-material-outline-power-settings-new"></i> {{ __('Logout') }}</a>
-
-                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                 @csrf
-                             </form>
-                            
-                            
-                            
-                            
-                            
-                            </li>
-						</ul>
-
-						</div>
-					</div>
-                   
-				</div>
-				<!-- User Menu / End -->
-                @endguest
-				<!-- Mobile Navigation Button -->
-				<span class="mmenu-trigger">
-					<button class="hamburger hamburger--collapse" type="button">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</button>
-				</span>
-
-			</div>
-			<!-- Right Side Content / End -->
-
-		</div>
-	</div>
-	<!-- Header / End -->
-
-</header>
-<div class="clearfix"></div>
+      </div>
+    </header>
+    <header class="header header--mobile" data-sticky="false">
+      <div class="header__content">
+        <div class="header__left"><a class="ps-toggle--sidebar" href="#navigation-mobile"><i class="fa fa-bars"></i></a></div>
+        <div class="header__center"><a class="ps-logo" href="#"><img src="{{asset('assets/img/exxpert-logo2.png')}}" alt=""></a></div>
+        <div class="header__right">
+          <div class="header__actions"><a class="ps-search-btn" href="#"><i class="fa fa-search"></i></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="ps-panel--sidebar" id="navigation-mobile">
+      <div class="ps-panel__header">
+        <h3>Menu</h3>
+      </div>
+      <div class="ps-panel__content">
+        <ul class="menu--mobile">
+          <li class="menu-item-has-children"><a href="index.html">Home</a><span class="sub-toggle"></span></li>
+          <li><a href="brower-freelancer.html">exxpert</a></li>
+          <li><a href="brower-employers.html">companies</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="menu-item-has-children"><a href="blog-grid.html">explore</a><span class="sub-toggle"></span>
+            <ul class="sub-menu">
+              <li><a href="blog-list.html">Blog list</a></li>
+              <li><a href="blog-grid.html">Blog Grid</a></li>
+              <li><a href="blog-detail.html">Blog Detail Width Sidebar</a></li>
+              <li><a href="blog-no-sidebar.html">Blog Detail Without Sidebar</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 <!-- Header Container / End -->
 
 <main class="py-4">
@@ -292,224 +144,129 @@
 
 <!-- Footer
 ================================================== -->
-<div id="footer">
-	
-	<!-- Footer Top Section -->
-	<div class="footer-top-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12">
+      
+      <footer class="ps-footer">
+        <div class="container">
+          <div class="ps-footer__top"><a class="ps-logo" href="index.html"><img src="{{asset('assets/img/exxpert-logo2.png')}}" alt=""></a>
+            <div class="ps-footer__numbers">
+              <p><span><strong>2,342,233</strong> COMMUNITY MEMBERS</span><span><strong>15,342,216</strong> TOTAL JOBS POSTED</span></p>
+            </div>
+          </div>
+          <div class="ps-footer__center">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 ">
+                <aside class="widget widget_footer">
+                  <h3 class="widget-title">Meet exxpert</h3>
+                  <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </aside>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 ">
+                <aside class="widget widget_footer">
+                  <h3 class="widget-title">exxpert Tools</h3>
+                  <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">My Resumes</a></li>
+                    <li><a href="#">My Jobs</a></li>
+                    <li><a href="#">Employers’ Messages</a></li>
+                  </ul>
+                </aside>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                <form class="ps-form--newsletters" action="http://nouthemes.net/html/athena/index.html" method="get">
+                  <h3>Email Newsletters</h3>
+                  <p>Keep me up to date with content, updates, and offers from exxpert</p>
+                  <div class="form-group--nest">
+                    <input class="form-control" type="email" placeholder="Email address">
+                    <button>Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="ps-footer__bottom">
+            <figure>
+              <ul class="ps-footer__nav">
+                <li><a href="#"> Privacy Policy</a></li>
+                <li><a href="#"> Terms and Conditions</a></li>
+                <li><a href="#"> Help</a></li>
+                <li><a href="#"> Ath Licenses</a></li>
+                <li><a href="#"> Partners</a></li>
+              </ul>
+			<p>&copy; 2020 <a href="#"><img src="{{asset('assets/img/exxpert-logo2.png')}}" alt="" srcset=""></p>
+            </figure>
+            <figure>
+              <div class="ps-footer__language"><span>Language:</span>
+                <select class="ps-select">
+                  <option value="1">English</option>
+                  <option value="1">Vietnamese</option>
+                </select>
+              </div>
+              <ul class="ps-list--social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </figure>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="back2top"><i class="pe-7s-angle-up"></i></div>
+    <div class="ps-site-overlay"></div>
+    <div id="loader-wrapper">
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div class="ps-search" id="site-search"><a class="ps-btn--close" href="#"></a>
+      <div class="ps-search__content">
+        <form class="ps-form--primary-search" action="http://nouthemes.net/html/athena/do_action" method="post">
+          <input class="form-control" type="text" placeholder="Search for...">
+          <button><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <!-- Plugins-->
+    <script src="{{asset('assets/plugins/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/owl-carousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/bootstrap4/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/masonry.pkgd.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/jquery-bar-rating/dist/jquery.barrating.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/select2/dist/js/select2.full.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/anime.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/wow.min.js')}}"></script>
+    <script src="{{asset('assets/js/main.js')}}"></script>
+	<script src="{{asset('assets/js/jquery.filterizr.js')}}"></script>
+	<script src="{{asset('assets/js/filterizr.min.js')}}"></script>
+	<script>
 
-					<!-- Footer Rows Container -->
-					<div class="footer-rows-container">
-						
-						<!-- Left Side -->
-						<div class="footer-rows-left">
-							<div class="footer-row">
-								<div class="footer-row-inner footer-logo">
-									<img src="{{asset('assets/images/exxpert-logo.png')}}" alt="">
-								</div>
-							</div>
-						</div>
-						
-						<!-- Right Side -->
-						<div class="footer-rows-right">
+$(window).load(function () {
+    
+    if ($('body .filter-portfolio').length > 0) {
+        $(function () {
+            $('.filter-portfolio').filterizr(
+                {
+                    delay: 0
+                }
+            );
+        });
+        $('.filteriz-navigation li').on('click', function () {
+            $('.filteriz-navigation .filtr').removeClass('active');
+            $(this).addClass('active');
+        });
+    }
 
-							<!-- Social Icons -->
-							<div class="footer-row">
-								<div class="footer-row-inner">
-									<ul class="footer-social-links">
-										<li>
-											<a href="#" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
-												<i class="icon-brand-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" title="Twitter" data-tippy-placement="bottom" data-tippy-theme="light">
-												<i class="icon-brand-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" title="Google Plus" data-tippy-placement="bottom" data-tippy-theme="light">
-												<i class="icon-brand-google-plus-g"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" title="LinkedIn" data-tippy-placement="bottom" data-tippy-theme="light">
-												<i class="icon-brand-linkedin-in"></i>
-											</a>
-										</li>
-									</ul>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							
-							<!-- Language Switcher -->
-							<div class="footer-row">
-								<div class="footer-row-inner">
-									<select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
-										<option selected>English</option>
-										<option>Français</option>
-										<option>Español</option>
-										<option>Deutsch</option>
-									</select>
-								</div>
-							</div>
-						</div>
+});
+	</script>
+  </body>
 
-					</div>
-					<!-- Footer Rows Container / End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer Top Section / End -->
-
-	<!-- Footer Middle Section -->
-	<div class="footer-middle-section">
-		<div class="container">
-			<div class="row">
-
-				<!-- Links -->
-				<div class="col-xl-2 col-lg-2 col-md-3">
-					<div class="footer-links">
-						<h3>For Candidates</h3>
-						<ul>
-							<li><a href="#"><span>Browse Jobs</span></a></li>
-							<li><a href="#"><span>Add Resume</span></a></li>
-							<li><a href="#"><span>Job Alerts</span></a></li>
-							<li><a href="#"><span>My Bookmarks</span></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Links -->
-				<div class="col-xl-2 col-lg-2 col-md-3">
-					<div class="footer-links">
-						<h3>For Employers</h3>
-						<ul>
-							<li><a href="#"><span>Browse Candidates</span></a></li>
-							<li><a href="#"><span>Post a Job</span></a></li>
-							<li><a href="#"><span>Post a Task</span></a></li>
-							<li><a href="#"><span>Plans & Pricing</span></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Links -->
-				<div class="col-xl-2 col-lg-2 col-md-3">
-					<div class="footer-links">
-						<h3>Helpful Links</h3>
-						<ul>
-							<li><a href="#"><span>Contact</span></a></li>
-							<li><a href="#"><span>Privacy Policy</span></a></li>
-							<li><a href="#"><span>Terms of Use</span></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Links -->
-				<div class="col-xl-2 col-lg-2 col-md-3">
-					<div class="footer-links">
-						<h3>Account</h3>
-						<ul>
-							<li><a href="#"><span>Log In</span></a></li>
-							<li><a href="#"><span>My Account</span></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Newsletter -->
-				<div class="col-xl-4 col-lg-4 col-md-12">
-					<h3><i class="icon-feather-mail"></i> Sign Up For a Newsletter</h3>
-					<p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
-					<form action="#" method="get" class="newsletter">
-						<input type="text" name="fname" placeholder="Enter your email address">
-						<button type="submit"><i class="icon-feather-arrow-right"></i></button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer Middle Section / End -->
-	
-	<!-- Footer Copyrights -->
-	<div class="footer-bottom-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12">
-				© 2020 <strong><img src="{{asset('assets/images/exxpert-logo.png')}}" alt="" srcset=""></strong>. All Rights Reserved.
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer Copyrights / End -->
-
-</div>
-<!-- Footer / End -->
-
-</div>
-<!-- Wrapper / End -->
-
-@yield('script')
-<!-- Scripts
-================================================== -->
-<script src="{{asset('assets/js/jquery-3.4.1.min.js')}}"></script>
-<script src="{{asset('assets/js/jquery-migrate-3.1.0.min.html')}}"></script>
-<script src="{{asset('assets/js/mmenu.min.js')}}"></script>
-<script src="{{asset('assets/js/tippy.all.min.js')}}"></script>
-<script src="{{asset('assets/js/simplebar.min.js')}}"></script>
-<script src="{{asset('assets/js/bootstrap-slider.min.js')}}"></script>
-<script src="{{asset('assets/js/bootstrap-select.min.js')}}"></script>
-<script src="{{asset('assets/js/snackbar.js')}}"></script>
-<script src="{{asset('assets/js/clipboard.min.js')}}"></script>
-<script src="{{asset('assets/js/counterup.min.js')}}"></script>
-<script src="{{asset('assets/js/magnific-popup.min.js')}}"></script>
-<script src="{{asset('assets/js/slick.min.js')}}"></script>
-<script src="{{asset('assets/js/custom.js')}}"></script>
-
-<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
-<script>
-// Snackbar for user status switcher
-$('#snackbar-user-status label').click(function() { 
-	Snackbar.show({
-		text: 'Your status has been changed!',
-		pos: 'bottom-center',
-		showAction: false,
-		actionText: "Dismiss",
-		duration: 3000,
-		textColor: '#fff',
-		backgroundColor: '#383838'
-	}); 
-}); 
-</script>
-
-
-<!-- Google Autocomplete -->
-<script>
-	function initAutocomplete() {
-		 var options = {
-		  types: ['(cities)'],
-		  // componentRestrictions: {country: "us"}
-		 };
-
-		 var input = document.getElementById('autocomplete-input');
-		 var autocomplete = new google.maps.places.Autocomplete(input, options);
-	}
-
-	// Autocomplete adjustment for homepage
-	if ($('.intro-banner-search-form')[0]) {
-	    setTimeout(function(){ 
-	        $(".pac-container").prependTo(".intro-search-field.with-autocomplete");
-	    }, 300);
-	}
-
-</script>
-
-<!-- Google API -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaoOT9ioUE4SA8h-anaFyU4K63a7H-7bc&amp;libraries=places&amp;callback=initAutocomplete"></script>
-
-</body>
-
-<!-- Mirrored from www.vasterad.com/themes/hireo/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Nov 2020 22:27:50 GMT -->
+<!-- Mirrored from nouthemes.net/html/athena/homepage-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 09:23:22 GMT -->
 </html>
