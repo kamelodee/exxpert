@@ -12,8 +12,8 @@
 	<div class="ps-home-banner">
 	  <div class="ps-carousel--dots owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="off" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut"><img src="{{asset('assets/img/banner/home-4/1.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/2.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/1.jpg')}}" alt=""><img src="{{asset('assets/img/banner/home-4/2.jpg')}}" alt=""></div>
 	  <form class="ps-form--home-find-job" action="http://nouthemes.net/html/athena/index.html" method="get">
-		<h1>Athena Connect <br/> Freelancers</h1>
-		<h5>Where the world meets startups. Millions of small businesses use Freelancer to turn their ideas into reality</h5>
+		<h1>Exxpert Connect <br/></h1>
+		<h3>Find local professionals for pretty much anything</h3>
 		<div class="form-group"><i class="fa fa fa-search"></i>
 		  <input class="form-control" type="text" placeholder="Enter job title, position, skills...">
 		  <button class="ps-btn ps-btn--gradient">Find Job</button>
@@ -334,7 +334,7 @@
 
 				
 				{{-- Explore more projects. --}}
-		<div class="card p-5">
+		<div class="area-services p-5 mt-5">
 			<div class="container">
 			  <div class="col-6">
 				<h4>Get free cost estimates.</h4>
@@ -382,7 +382,55 @@
 			
 	
 		{{-- popular services in your area  end--}}
+{{-- sevices you may like --}}
 
+<div class="card p-5" >
+	<div class="container">
+	  <div class="ps-section__header">
+		<h4>Services you might also like . </h4>
+	  </div>
+	  <div class="ps-section__content">
+
+		<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
+		
+			<div class="" style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> and make up the bulk of the card's content.</p>
+				</div>
+			  </div>
+			  
+			  <div class=" " style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> and make up the bulk of the card's content.</p>
+				</div>
+			  </div>
+
+			  <div class=" " style="">
+			  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text">Some the card's content.</p>
+				</div>
+			  </div>
+
+			  <div class="" style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> up the bulk of the card's content.</p>
+				</div>
+			  </div>
+		  
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		{{-- footer  --}}
+
+
+
+{{-- sevices you may like end --}}
 
 
 	<div class="ps-section ps-home-process bg--cover" data-background="{{asset('assets/img/bg/home-4/process.jpg')}}">
@@ -420,7 +468,55 @@
 		</div>
 	  </div>
 	</div>
+{{-- rencently ask quetions --}}
 
+
+<div class="card p-5" >
+	<div class="container">
+	  <div class="ps-section__header">
+		<h4>Recent questions from exxpert customers.</h4>
+	  </div>
+	  <div class="ps-section__content">
+
+		<div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="50000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="3" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
+		
+			<div class="" style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> and make up the bulk of the card's content.</p>
+				</div>
+			  </div>
+			  
+			  <div class=" " style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> and make up the bulk of the card's content.</p>
+				</div>
+			  </div>
+
+			  <div class=" " style="">
+			  <img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text">Some the card's content.</p>
+				</div>
+			  </div>
+
+			  <div class="" style="">
+				<img class="card-img-top" src="{{asset('assets/img/blog/blog-2.jpg')}}" alt="Card image cap">
+				<div class="card-body">
+				  <p class="card-text"> up the bulk of the card's content.</p>
+				</div>
+			  </div>
+		  
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		{{-- footer  --}}
+
+
+{{-- rencently ask quetions end --}}
 
 	<div class="ps-home-top-jobs gray">
 	  <div class="container">

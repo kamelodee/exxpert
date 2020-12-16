@@ -29,31 +29,125 @@
       <div class="header__right">
         <ul class="menu">
           <li class="menu-item-has-children"><a href="index.html">Home</a><span class="sub-toggle"></span> </li>
-          <li><a href="brower-freelancer.html">exxperts</a></li>
-          <li><a href="brower-employers.html">companies</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
+
+          <li><a href="services.html">Events</a></li>
           <li class="menu-item-has-children"><a href="blog-grid.html">explore</a><span class="sub-toggle"></span>
             <ul class="sub-menu">
-              <li><a href="blog-list.html">Blog list</a></li>
-              <li><a href="blog-grid.html">Blog Grid</a></li>
-              <li><a href="blog-detail.html">Blog Detail Width Sidebar</a></li>
-			  <li><a href="blog-no-sidebar.html">Blog Detail Without Sidebar</a>
+          
 			
 			<div class="">
-				<a href="#">electricians</a>  ||  
-				<a href="#">tillers</a>  ||  
-				<a href="#">massons</a>   ||  
-				<a href="#">web designers</a>  ||  
-				<a href="#">graphic designers</a>  ||  
-				<a href="#">houser cleaner</a>  ||  
-				<a href="#">painters</a>   ||  
-				
-			</div>
+			<div class="row">
+				<div class="col">
+          <a href="#"> Cheap Movers</a>
+        </div>  
+				<div class="col">
+          <a href="#">  Ethernet Wiring Services</a>
+        </div>  
+				<div class="col">
+          <a href="#"> Electricians</a>
+        </div>  
+        <div class="col">
+          <a href="#"> TV Wall Mount Installation Services</a>
+        </div> 
+        </div>  
+			<div class="row">
+				 
+				<div class="col">
+          <a href="#">  Ethernet Wiring Services</a>
+        </div>  
+				<div class="col">
+          <a href="#"> Plumbers</a>
+        </div>  
+        <div class="col">
+          <a href="#">  General Contractors</a>
+        </div>  
+				  
+				<div class="col">
+          <a href="#">  Single Item Movers</a>
+        </div>
+        </div>  
+			  
+			<div class="row">
+				<div class="col">
+          <a href="#"> Handyman Services</a>
+        </div>  
+				<div class="col">
+          <a href="#">Christmas Light Installers</a>
+        </div>  
+				<div class="col">
+          <a href="#">Small Moving Companies</a>
+        </div>  
+				<div class="col">
+          <a href="#">Residential Movers</a>
+        </div>  
+        </div>  
+			<div class="row">
+				<div class="col">
+          <a href="#"> Handyman Services</a>
+        </div>  
+				<div class="col">
+          <a href="#">House Cleaning Services</a>
+        </div>  
+				<div class="col">
+          <a href="#">Last Minute Movers</a>
+        </div>  
+        <div class="col">
+          <a href="#">Security Camera Installers</a>
+        </div> 
+        </div>  
+			<div class="row">
+				 
+				<div class="col">
+          <a href="#"> Affordable Roofers</a>
+        </div>  
+				<div class="col">
+          <a href="#">Events and more</a>
+        </div>  
+        <div class="col">
+          <a href="#">App Developers</a>
+        </div>  
+				<div class="col">
+          <a href="#">Roofing Contractors</a>
+        </div> 
+        </div>  
+			<div class="row">
+				 
+				<div class="col">
+          <a href="#">Leaf Removal Services</a>
+        </div>  
+				  
+				<div class="col">
+          <a href="#">Affordable Attorneys</a>
+        </div>  
+				<div class="col">
+          <a href="#">Roofing Contractors</a>
+        </div>  
+				<div class="col">
+          <a href="#"> Personal Trainers</a>
+        </div> 
+        </div>  
+			 
+			<div class="row">
+        <div class="col">
+          <a href="#">Local Roofers</a>
+        </div>  
+				<div class="col">
+          <a href="#">Movers</a>
+        </div> 
+				  
+				<div class="col">
+          <a href="#">Freelance Web Designers</a>
+        </div>  
+				<div class="col">
+          <a href="#"> Personal Trainers</a>
+        </div>  
+        </div>  
+        </div>  
+      
 			</li>
             </ul>
           </li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a class="btn btn-success" href="#">exxpert Pro</a></li>
 		</ul>
 		
 
